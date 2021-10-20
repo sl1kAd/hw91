@@ -1,22 +1,37 @@
-﻿#include <iostream>
+﻿#include<iostream>
+#include <stack>
 
 using namespace std;
 
 int main()
 {
+    stack <int> one;
 
-    priority_queue <int> priority_q; 
-    
-    cout << "Press 7 numb: " << endl;
+    int num, bum;
 
-    for (int j = 0; j < 7; j++) 
+    cout << "Enter count:" << endl;
+
+    cout << "==> ";
+
+    cin >> num;
+
+    while (num != 0)
     {
-        int a; cin >> a;
+        one.push(num % 2);
 
-        priority_q.push(a);  
+        num = num / 2;
+
+
     }
-   
-    cout << "Первый элемент очереди: " << priority_q.top(); 
-    
+
+    while (one.size() != 0)
+    {
+        bum = one.top();
+
+        one.pop();
+
+        cout << bum;
+    }
+
     return 0;
 }
