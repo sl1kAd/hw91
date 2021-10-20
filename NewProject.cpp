@@ -4,18 +4,17 @@ using namespace std;
 
 int main()
 {
-    setlocale(LC_ALL, "rus");
 
-    priority_queue <int> priority_q;  // объявляем приоритетную очередь
-
-    cout << "Введите 7 чисел: " << endl;
+    priority_queue <int> priority_q; 
+    
+    cout << "Press 7 numb: " << endl;
 
     for (int j = 0; j < 7; j++) 
     {
         int a; cin >> a;
 
-        priority_q.push(a);  // добавляем элементы в очередь
+        priority_q.push(a);  
     }
-    // выводим первый
-    cout << "Первый элемент очереди: " << priority_q.top();  // элемент
+   
+    cout << "Первый элемент очереди: " << priority_q.top(); 
 }
