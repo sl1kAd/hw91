@@ -17,4 +17,6 @@ int main()
     }
    
     cout << "Первый элемент очереди: " << priority_q.top(); 
+    
+    return 0;
 }
